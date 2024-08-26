@@ -1,0 +1,115 @@
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url(Img/Back/mario-1081471_640.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    z-index: 1;
+    /* Menü über dem Hintergrundbild */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+.menu a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(45deg, aliceblue, #ff0059);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container div {
+    text-align: center;
+    border: 4px solid #fff;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    transition: all 0.3s ease;
+}
+
+.main-container img {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.main-container div:hover img {
+    transform: scale(1.05);
+}
+
+.zu {
+    background: linear-gradient(to right top, rgb(25, 14, 5), transparent);
+}
+
+.z1 {
+    background: linear-gradient(to left top, rgb(25, 14, 5), transparent);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(156, 28, 51);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(73, 23, 60);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}

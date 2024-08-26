@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Mario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="Img/Back/back.jpg" alt="Hintergrundbild" class="rausBild" id="rausBild">
+    </div>
+
+    <div class="menu" id="menu">
+        <ul>
+            <li class="link"><a href="#">Home</a></li>
+            <li id="link1" class="link"><a href="Spind.html">Spind</a></li>
+            <li id="link2" class="link"><a href="Infos.html">Infos</a></li>
+        </ul>
+    </div>
+
+    <button id="playButton" class="play-btn">Play</button>
+
+    <canvas id="gameCanvas"></canvas>
+
+
+    <audio id="backgroundMusic" src="audio/backgroundmelody.mp3" loop></audio>
+    <audio id="gameOverSound" src="audio/over.mp3"></audio>
+    <audio id="winSound" src="audio/winsound.mp3"></audio>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/game.js"></script>
+    <script src="JS/spind.js"></script>
+</body>
+
+</html>

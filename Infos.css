@@ -1,0 +1,80 @@
+body,
+html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(Img/Back/yoshi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* Ensure the menu is positioned at the top */
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    z-index: 1;
+    /* Menü über dem Hintergrundbild */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+
+
+.menu a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(45deg, aliceblue, #ff0059);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.container {
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.233);
+    color: white;
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container ul {
+    list-style: none;
+    padding: -5px;
+    font-family: 'Courier New', Courier, monospace;
+ color: white;
+}
